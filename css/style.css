@@ -1059,6 +1059,7 @@ html[dir="rtl"] .social {
 }
 .pay-img {
   margin: 0 auto;
+  margin-bottom: 5px;
 }
 .copy-right {
   display: -webkit-box;
@@ -1153,6 +1154,10 @@ html[dir="rtl"] .social {
     display: none;
     transition: none;
   }
+  .show-icons,
+  .header-icons .add-to{
+        justify-content: end;
+    }
   .navgition {
     display: block;
     position: fixed;
@@ -1349,6 +1354,9 @@ html[dir="rtl"] .social {
   .pay-flex {
     flex-direction: column-reverse;
     justify-content: center;
+  }
+  .pay-footer{
+    padding: 10px 0;
   }
   .pay-figure {
     margin-bottom: 5px;
