@@ -853,11 +853,11 @@ footer {
   display: inline-flex;
   transition: all 0.3s ease-in-out;
 }
-.nav-foot-li:hover .nav-foot-link {
+.nav-foot-li .nav-foot-link:hover {
   transform: translateX(6px);  
   color: var(--main-hover);
 }
-html[dir="rtl"] .nav-foot-li:hover .nav-foot-link {
+html[dir="rtl"] .nav-foot-li .nav-foot-link:hover {
   transform: translateX(-6px);
 }
 .news-letter .news-span {
