@@ -84,10 +84,6 @@
             el: '.product-slider .swiper-pagination',
             clickable: true,
         },
-        navigation: {
-            nextEl: '.product-slider .swiper-btn-next',
-            prevEl: '.product-slider .swiper-btn-prev',
-        },
         breakpoints: {
             0: {
                 slidesPerView: 2,
