@@ -1202,7 +1202,7 @@ html[dir="ltr"] .pay-figure {
   }
   .chevron-down {
     color: var(--main-color);
-    font-size: 16px;
+    font-size: 15px;
     padding: 0;
   }
   html[dir="rtl"] .big-menu .dropdown-content {
@@ -1252,7 +1252,7 @@ html[dir="ltr"] .pay-figure {
     display: block;
   }
   .top-header .hide-txt:hover {
-    color: #dfacac;
+    color: var(--main-hover);
   }
 
   /*       header                    */
