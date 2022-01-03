@@ -1336,11 +1336,6 @@ html[dir="ltr"] .pay-figure {
   }
   /*                             footer                          */
 }
-@media (max-width: 380px){
-    .copy-right {
-        font-size: 9px;
-    }
-}
 
 
 /*overlay*/
