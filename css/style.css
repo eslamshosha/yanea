@@ -67,7 +67,7 @@ body {
   top: 38px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 4px 0 4px;
+  padding: 7px 0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -865,7 +865,7 @@ html[dir="rtl"] .nav-foot-li .nav-foot-link:hover {
   font-size: 14px;
   font-weight: 400;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .news-letter h3 {
   margin: 0 0 15px;
@@ -893,15 +893,15 @@ html[dir="rtl"] .nav-foot-li .nav-foot-link:hover {
 .newsletter-button {
   position: absolute;
   left: auto;
-  right: 0;
+  right: 4px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--main-color);
   font-weight: 700;
   border: none;
   border-radius: 20px;
-  width: 109px;
-  height: 40px;
+  width: 87px;
+  height: 32px;
   background-image: -moz-linear-gradient(
     180deg,
     rgb(189, 136, 36) 0%,
@@ -924,7 +924,7 @@ html[dir="rtl"] .nav-foot-li .nav-foot-link:hover {
   transition: all 0.3s ease-in-out;
 }
 html[dir="rtl"] .newsletter-button {
-  left: 0;
+  left: 4px;
   right: auto;
 }
 .newsletter-button::after {
@@ -966,7 +966,7 @@ html[dir="rtl"] .newsletter-button {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  background-color: rgb(0 0 0 / 20%);
+  background-color: #c1c1c1;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
@@ -1093,6 +1093,9 @@ html[dir="ltr"] .pay-figure {
     }
 }
 @media (max-width: 991px) {
+    .nav-header{
+        padding: 10px 0;
+    }
   .top-header .img-logo img {
     max-width: 130px;
   }
@@ -1106,7 +1109,14 @@ html[dir="ltr"] .pay-figure {
   .show-icons,
   .header-icons .add-to{
         justify-content: end;
+        font-size: 18px;
     }
+    .header-icons .add-to .dropdown-content {
+        left: 67%;
+      }
+      html[dir="rtl"] .add-to .dropdown-content {
+        left: 33%;
+      }
   .navgition {
     display: block;
     position: fixed;
@@ -1138,7 +1148,7 @@ html[dir="ltr"] .pay-figure {
     height: auto;
     color: #fff;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 24px 20px;
   }
@@ -1181,6 +1191,11 @@ html[dir="ltr"] .pay-figure {
     display: block;
     padding: 0;
   }
+  .lang-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  .nav-head .dropdown-content,
   .big-menu .dropdown-content {
     background-color: transparent;
     text-align: left;
@@ -1239,9 +1254,9 @@ html[dir="ltr"] .pay-figure {
   .header-icons .lang-section {
     display: none;
   }
-  .header-icons .dropdown.cat-anchor {
+  /* .header-icons .dropdown.cat-anchor {
     display: none;
-  }
+  } */
   .hide-big {
     display: block;
   }
@@ -1297,16 +1312,23 @@ html[dir="ltr"] .pay-figure {
   .pay-footer{
     padding: 10px 0;
   }
+  .cr-img{
+      margin-bottom: 20px;
+  }
+  .pay-img-cont{
+      order: 1;
+  }
   .pay-figure {
     margin-bottom: 5px;
-    margin: 10px 0;
   }
   .copy-right {
     text-align: center;
+    order: 2;
   }
   .design-text {
     display: flex;
     align-items: center;
+    order: 3;
   }
   .pay-figure,
   html[dir="ltr"] .pay-figure  {
@@ -1380,10 +1402,13 @@ html[dir="ltr"] .pay-figure {
     border-bottom: 8px solid #fff;
     position: absolute;
     top: -8px;
-    left: 50%;
+    left: 75%;
     transform: translateX(-50%);
     transition: 0.3s;
     opacity: 1;
+}
+html[dir="ltr"] .cats-dispaly::before {
+    left: 25%;
 }
 .cats-dispaly{
     left: 50%;
@@ -1400,7 +1425,7 @@ html[dir=rtl] .cats-dispaly{
     align-items: center;
     flex-direction: column; */
     height: max-content;
-    padding: 15px 0px;
+    padding: 7px 0px;
 }
 
 .nav-header .cats-dispaly .cat-li,
@@ -1409,10 +1434,9 @@ html[dir=rtl] .cats-dispaly{
 }
 .cats-dispaly .cat-li a{
     color: #616161;
-    /* padding: 4px 0 4px; */
     text-decoration: none;
     white-space: nowrap;
-    line-height: 38px;
+    /* line-height: 38px; */
     display: block;
     font-weight: 400;
     font-size: 14px;   
@@ -1420,7 +1444,7 @@ html[dir=rtl] .cats-dispaly{
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 0 15px;
+    padding: 5px 15px;
     transition: all .3s ease-in-out;
 }
 .cats-dispaly .sub-list .cat-li a{
@@ -1430,7 +1454,7 @@ html[dir=rtl] .cats-dispaly{
     color: var(--main-hover);
 }
 .has-level-2>.cat-anchor>i {
-    font-size: 12px;
+    font-size: 8px;
 }
 html[dir=rtl] .sub-list{
     left: auto;
@@ -1461,7 +1485,7 @@ html[dir=rtl] .has-level-2>.cat-anchor>i{
 }
 @media (min-width: 992px){
     .has-level-2>.cat-anchor>i::before {
-        content: "";
+        content: "";
     }
 }
 @media (max-width: 991px){
